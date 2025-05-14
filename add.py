@@ -25,3 +25,24 @@ def calculate_average(numbers):
         raise TypeError("All elements in the list must be numbers")
     
     return round(sum(numbers) / len(numbers), 2)
+
+def multiply(a, b):
+    """
+    Multiply two numbers.
+
+    This function takes two numbers (integers or floats) and returns their product.
+
+    Args:
+    a (int or float): The first number
+    b (int or float): The second number
+
+    Returns:
+    float: The product of a and b
+
+    Raises:
+    TypeError: If either a or b is not a number
+    """
+    if not isinstance(a, (int, float)) or not isinstance(b, (int, float)):
+        raise TypeError("Both arguments must be numbers")
+
+    return a * b
